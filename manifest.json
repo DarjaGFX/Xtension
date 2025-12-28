@@ -1,0 +1,22 @@
+{
+  "name": "Xtension",
+  "version": "1.6",
+  "description": "Adds user location after the name in each tweet on x.com using logged-in session",
+  "manifest_version": 3,
+  "permissions": ["scripting", "storage"],
+  "host_permissions": ["https://x.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://x.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end",
+      "world": "ISOLATED"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["page.js"],
+      "matches": ["https://x.com/*"]
+    }
+  ]
+}
