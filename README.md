@@ -43,3 +43,7 @@ A Chrome extension that displays user location information on Twitter/X tweets.
 - Location data comes from user profiles on X.com
 - The extension respects X.com's API rate limiting
 - Requires active internet connection to fetch location data
+## Caution
+
+- **Rate Limiting:** This extension can hit X.com's API rate limits very quickly. Rapid scrolling through many tweets will likely trigger temporary blocks.
+- **Usage Tip:** To ensure consistent performance, scroll through the feed slowly and do not rush. This allows the extension to stay within rate limits and effectively utilize its cache.
